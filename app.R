@@ -31,7 +31,7 @@ require(colorspace)
 ## Load in data
 mouse_human_lookup <- readRDS("data/mouse_human_lookup.rds")
 mouse_human_lookup <- mouse_human_lookup[, c(1:4)]
-source("./functions/mapToSpace.R")
+source("./mapToSpace.R")
 
 umap.model <- load_uwot("./data/umap_model")
 human_svd <- readRDS("./data/LIHC_TCGA_SVD_100dim.rds")
